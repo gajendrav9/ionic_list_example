@@ -7,8 +7,61 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
+  <!-- <div class="ion-padding">
     The world is your oyster.
     <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+  </div> -->
+  
+<ion-card *ngFor="let card of nurseryItemArray; let i = index">
+  
+  <div class="row">
+    <div class = "column">
+        <h2 class="title">S.No.</h2>
+        <p>{{i+1}}</p>   
+        </div>
+    
+    <div class = "col">
+        <h2 class="title">Product Name</h2>
+        <p>{{card.PRODUCTNAME}}</p>
+    </div>
   </div>
+  <div class="row">
+      <div class = "col">
+          <h2 class="title">QTY(for sale)</h2>
+           
+          </div>
+      
+      <div class = "col">
+          <h2 class="title">Sale Priority</h2>
+          
+      </div>
+    </div>
+<div *ngFor="let card1 of customList2; let i = index">
+  
+  <div class="row">
+      <div class = "col">
+          <h2 class="title">{{card1.title}} : {{card1.rate}}</h2>
+         
+      </div>
+      <div class = "col">
+          <h2 class="title">{{card1.title}} : {{i+1}}</h2>   
+          </div> 
+    </div>
+</div>
+
+<div class="row">
+<div class = "col">
+    <h2 class="title">Product Unit</h2>
+    <p>{{card.UNITNAME}}</p>
+</div>
+<div class = "col">
+    <h2 class="title">QTY(for dept)</h2>
+    <p>0</p>   
+    </div> 
+    <div class = "col">
+        <h2 class="title">Price (INR)</h2>
+        <p>{{card.rate}}</p>   
+        </div> 
+</div>
+</ion-card>
 </ion-content>
