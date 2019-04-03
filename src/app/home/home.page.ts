@@ -21,7 +21,7 @@ export class HomePage implements OnInit {
   ngOnInit(){
     //throw new Error("Method not implemented.");
     this.itemsListArray=this.itemService.getItems();
-    alert(JSON.stringify(this.itemsListArray));
+    //alert(JSON.stringify(this.itemsListArray));
   }
 
 }
