@@ -1,1 +1,25 @@
 
+  .row
+  {
+    margin: 5px;
+    width: 100%;
+  }
+
+  .column {
+    float: left;
+    width: 10%;
+  }
+
+  .col-50 {
+    float: left;
+    width: 50%;
+  }
+
+  .title {
+    // background-color: rgb(194, 190, 190);
+   // border: 1px solid #edf1f1;
+    color: #7f8c8d;
+    margin: 0px;
+    font-size: 0.9em;
+  
+}
